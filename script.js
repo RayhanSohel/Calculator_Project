@@ -13,3 +13,8 @@ function clearScreen() {
     var q = eval(p);
     document.getElementById("result").value = q;
    }
+   //sound add
+   var audio = new Audio("click.mp3");
+    document.onclick = function() {
+    audio.play();
+    }

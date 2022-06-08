@@ -1,63 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 body{
-    background-image: linear-gradient(to top, rgb(63, 63, 63) , rgb(0, 0, 0));
-    border-radius: 20px;
-    margin-top: 10px;
-    padding: 10px 20px;
+    background-image: url("background.png");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
 header{
-    color: rgb(158, 158, 158);
+    color: rgb(1, 253, 220);
     font-family: 'Orbitron', sans-serif;
     text-align: center;
 }
 .calculator {
- padding: 20px;
+ padding: 10px;
  border-radius: 20px;
- height: 550px;
- width: 500px;
+ border-spacing: 10px;
+ height: auto;
+ width: auto;
  text-align: center;
+ overflow: hidden;
+ z-index: 10;
+ backdrop-filter: blur(15px);
  margin: auto;
- background-image: linear-gradient(to bottom, rgb(63, 63, 63) , rgb(0, 0, 0));
- box-shadow:  rgba(0, 255, 13, 0.26) 2px 3px 3px 3px;
+ background: rgba(255, 255, 255, 0.05);
+ box-shadow:  rgba(0, 0, 0, 0.2) 2px 3px 3px 3px;
 }
 .display-box {
  font-family: 'Orbitron', sans-serif;
  font-size: 35px;
  padding-left: 5px;
  font-weight: bolder;
- background-color: #ffffff;
- border: solid black 0.5px;
- color: black;
- border-radius: 20px;
- width: 94%;
- height: 65%;
+ overflow: hidden;
+ text-align:right;
+ padding-right: 2vh;
+ padding-left: 2vh;
+ z-index: 10;
+ backdrop-filter: blur(15px);
+ background: rgba(255, 255, 255, 0.05);
+ border: none;
+ color: rgb(255, 0, 98);
+ border-radius: 15px;
+ min-height: 10vh;
+ min-width: auto;
 }
 .button {
  font-family: 'Orbitron', sans-serif;
  font-size: 30px;
  font-weight: bolder;
- background-color: rgb(96, 212, 111);
- padding: 5px;
- color: black;
- border: solid rgb(97, 97, 97) 0.2px;
- width: 90%;
- border-radius: 20px;
- height: 70%;
+ overflow: hidden;
+ z-index: 10;
+ backdrop-filter: blur(10px);
+ margin: auto;
+ background: rgba(255, 255, 255, 0.05);
+ box-shadow:  rgba(0, 0, 0, 0.2) 2px 3px 3px 3px;
+ padding: 10px;
+ color: rgb(1, 253, 220);
+ border: none;
+ border-radius: 10px;
+ border-collapse: collapse;
+ min-height: 10vh;
+ min-width: 15vh;
 }
-.button:active
+.twocolumn{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    margin: auto;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow:  rgba(0, 0, 0, 0.2) 2px 3px 3px 3px;
+    padding: 10px;
+    color: rgb(255, 0, 98);
+    border: none;
+    border-radius: 10px;
+    min-height: 10vh;
+    min-width: 33vh;
+}
+.tworow{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    overflow: hidden;
+    z-index: 20;
+    backdrop-filter: blur(10px);
+    margin: auto;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow:  rgba(0, 0, 0, 0.2) 2px 3px 3px 3px;
+    padding: 10px;
+    color: rgb(255, 0, 98);
+    border: none;
+    border-radius: 10px;
+    min-height: 22vh;
+    min-width: 15vh;
+}
+.button:hover, .twocolumn:hover, .tworow:hover
 {
- background: #00fd7f;
- -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
- -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
- box-shadow: inset 0px 0px 5px #c1c1c1;
+ background: rgba(255, 255, 255, 0.05);
+ color: black;
+ box-shadow:  rgba(0, 0, 0, 0.2) 2px 3px 3px 3px;
+}
+.button:active, .twocolumn:active, .tworow:active
+{
+ background: rgb(1, 253, 220);
+ color: black;
+ box-shadow:  rgba(0, 0, 0, 0.2) 2px 3px 3px 3px;
 }
 footer{
     font-family: 'Orbitron', sans-serif;
     text-align: center;
-    background-image: radial-gradient(rgb(37, 37, 37) , rgb(32, 32, 32));
-    color: rgb(158, 158, 158);
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    margin: auto;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow:  rgba(0, 0, 0, 0.2) 2px 3px 3px 3px;
+    color: rgb(1, 253, 220);
     border-radius: 20px;
     margin-top: 10px;
     padding: 10px 20px;
-    box-shadow: rgba(0, 255, 13, 0.26) 2px 3px 3px 3px;
 }
